@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>第一章 计算机系统漫游</title>
+</head>
+<body>
+    <h1>计算机系统漫游</h1>
+    <h2>1.1信息就是位+上下文</h2>
+    <pre>
+        #include <stdio.h>
+        
+        int main()
+        {
+            printf("Hello, world!\n");
+            return 0;
+        }
+    </pre>
+    <p>Hello 程序的生命周期是从一个源程序开始的.<br> 像hello.c 这样只由ASCII字符构成的文件称为<b>文本文件</b>,所有其它文件都称为<b>二进制文件</b></p>
+    <p>系统中所有的信息-包括磁盘文件、内存中的程序、内存中存放的用户数据以及网络上传送的数据,都是由一串比特表示的</p>
+    
+    <h2>1.2程序被其它程序翻译成不同的格式</h2>
+    <p>在Unix系统上,从源文件到目标文件的转化是由编译器驱动程序完成的:</p>
+    <code>linux>gcc -o hello hello.c</code>
+    <p>编译系统由:预处理器、编译器、汇编器和链接器构成</p>
+    <svg width="100" height="100">
+		<rect x="10" y="10" width="80" height="80"/>
+        <p style="color:antiquewhite">你好</p>
+	</svg>
+</body>
+</html>
